@@ -33,7 +33,7 @@ para agregar las dependencias utilise:
 
     pip install -r requirements.txt
 
-## garantá:
+## garantía:
 
 No se ofrece ningún tipo de garantía
 
