@@ -6,7 +6,7 @@ Este software emplea el micrófono de la laptop para reconocer cuando se pronunc
 
 La idea es poner en evidencia esta clara y burda intención de construir a un enemigo para aglutinar en él la causa de todos los males que aquejan a la sociedad. Transformándolo en una situación graciosa.
 Además se incorpora un contador con el fin de acentuar la cantidad de veces que se ha intentado realizar dicha acción.
---------------------------------------------------------------------------------
+
 
 ## requisitos:
 
@@ -15,6 +15,9 @@ Gracias Google Speech Recognition este programa se puede correr en computadoras 
 
 * Conexión a Internet: si
 * Micrófono activado y configurado: si
+
+--------------------------------------------------------------------------------
+la efectividad del reconocimiento de la palabra clave no va a ser del 100% ya que depende de la calidad del micrófono, el alcance del mismo, como así también de la pronunciación del emisor. Así mismo al primera vez que se ejecuta el programa, puede que tarde un poco de tiempo más en reconocerla.
 
 ## informacón técnica:
 
