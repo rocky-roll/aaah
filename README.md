@@ -34,6 +34,8 @@ para agregar las dependencias utilise:
 
     pip install -r requirements.txt
 
+* playsound==1.2.2 para windows
+
 ## garantía:
 
 No se ofrece ningún tipo de garantía
