@@ -1,6 +1,6 @@
 ## Ah 
 
-Este programa utiliza el micrófono de la laptop para reconocer cuando se pronuncia la palabra “macri". luego reproduce el sonido de un gato maullando y cambia la imagen en la ventana de un felino en estado de tranquilidad al de uno alterado.
+Este programa utiliza el micrófono de la laptop para reconocer cuando se pronuncia la palabra “macri" y luego reproduce el sonido de un felino maullando, cambiando la imagen en la ventana de un gato en estado de tranquilidad al de uno alterado.
 
 ![Ah... pero](https://i.postimg.cc/JzChbB3C/Captura-de-pantalla-2023-01-26-09-17-06.png)
 
