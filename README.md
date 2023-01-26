@@ -2,7 +2,7 @@
 
 Este programa utiliza el micrófono de la laptop para reconocer cuando se pronuncia la palabra “macri". luego reproduce el sonido de un gato maullando y cambia la imagen en la ventana de un felino en estado de tranquilidad al de uno alterado.
 
-![Ah... pero](https://i.postimg.cc/KzdkKYXW/Captura-de-pantalla-2023-01-23-21-20-16.png)
+![Ah... pero](https://i.postimg.cc/JzChbB3C/Captura-de-pantalla-2023-01-26-09-17-06.png)
 
 La idea es poner en evidencia esta clara y burda intención de construir a un enemigo para aglutinar en él la causa de todos los males que aquejan a la sociedad. Transformándolo en una situación graciosa.
 Además de incorporar un contador con el fin de acentuar la cantidad de veces que se ha intentado realizar dicha acción.
