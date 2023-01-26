@@ -13,11 +13,6 @@ import tkinter as tk
 from tkinter import *
 from recognize_google_ import *
 
-# 
-#    author='@rocky_roll,
-#    license='GNU GPLv3'
-# 
-
 
 def inicio():
     t0 = threading.Thread(target=main, daemon=True)
