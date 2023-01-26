@@ -28,7 +28,7 @@ Este script fue realizado en el lenguaje de programación python3
     • queue
     • random
     • speech_recognition  
-    • pyaudio
+    • playsound
      
 para agregar las dependencias utilise:
 
