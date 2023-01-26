@@ -47,7 +47,7 @@ def actualizar_etiqueta(q):
     root.after(100, actualizar_etiqueta, q)
 
 root = tk.Tk()
-root.title("Aaah... ")
+root.title("Ah... ")
 ancho_ventana = 250
 alto_ventana = 300
 x_ventana = root.winfo_screenwidth() // 2 - ancho_ventana // 2
@@ -58,7 +58,7 @@ p1 = PhotoImage(file = 'logo32.png')
 root.iconphoto(True, p1)
 root.resizable(0,0)
 #root.configure(bg="#3B3E3F")
-label = tk.Label(root, text=f"Aaah... pero Macri {cont}",  font=("Roboto", 14))
+label = tk.Label(root, text=f"Ah... pero Macri {cont}",  font=("Roboto", 14))
 label.pack(pady=6, padx=1)
 imagen = tk.PhotoImage(file = "cat1.png") 
 imagen2 = tk.PhotoImage(file = "cat2.png")
