@@ -4,8 +4,8 @@ Este software emplea el micrófono de la laptop para reconocer cuando se pronunc
 
 ![Ah... pero](https://i.postimg.cc/JzChbB3C/Captura-de-pantalla-2023-01-26-09-17-06.png)
 
-La idea es poner en evidencia esta clara y burda intención de construir a un enemigo para aglutinar en él la causa de todos los males que aquejan a la sociedad. Transformándolo en una situación graciosa.
-Además se incorpora un contador con el fin de acentuar la cantidad de veces que se ha intentado realizar dicha acción.
+La idea es poner en evidencia la intención de construir a un enemigo para aglutinar en él la causa de todos los males y transformalo en una situación graciosa.
+Además se incorpora un contador con el fin de contabilizar la cantidad de veces que se ha intentado realizar dicha acción.
 --------------------------------------------------------------------------------
 
 
