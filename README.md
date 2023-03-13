@@ -19,7 +19,8 @@ Gracias Google Speech Recognition este programa se puede correr en computadoras 
 
 --------------------------------------------------------------------------------
 
-la efectividad puede que el reconocimiento de la palabra clave no va a ser del 100% ya que depende de la calidad del micrófono, el alcance del mismo, el ruido ambiente, como así también de la pronunciación del emisor. Así mismo la primera vez que se ejecuta el programa, puede que tarde un poco de tiempo más en reconocerla.
+##Efectividad: 
+El reconocimiento de la palabra clave no va a ser del 100% ya que depende de factores como: la calidad del micrófono, el alcance del mismo, el ruido ambiente, como así también de la pronunciación del emisor, entre otross. Así mismo, la primera vez que se ejecuta el programa, puede que tarde un tiempo mayor a lo habitual en realizar el reconocimiento.
 
 ## informacón técnica:
 
