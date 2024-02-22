@@ -6,7 +6,7 @@
 #    license='GNU GPLv3'
 #
 
-import sys
+import os
 import threading
 import time
 import tkinter as tk
@@ -14,39 +14,44 @@ from tkinter import *
 
 from recognize_google_ import *
 
+counter = 0
 
-def inicio():
+
+def start():
     t0 = threading.Thread(target=main, daemon=True)
     t0.start()
 
 
-inicio()
+start()
 
 
-def actualizar_imagen(q1):
+def close():
+    os._exit(0)
+
+
+def actualizar_imagen(q):
     try:
-        q1.get_nowait()
+        cont = q.get_nowait()
+        if cont == True:
+            label1.configure(image=imagen2)
+        if cont == False:
+            label1.configure(image=imagen)
     except queue.Empty:
-        # Todavía no se recibió ningún dato del hilo.
         pass
-    else:
-        label1.configure(image=imagen2)
-    # Reprogramar esta función para dentro de 1 segundo.
-    root.after(10, actualizar_imagen, q1)
+    root.after(10, actualizar_imagen, q)
 
 
 def actualizar_etiqueta(q):
+    global counter
     try:
         cont = q.get_nowait()
+        if cont == True:
+            counter += 1
+            label.configure(text=f"Ah... pero Macri {counter}")
+
     except queue.Empty:
-        # Todavía no se recibió ningún dato del hilo.
         pass
-    else:
-        label.configure(text=f"Ah... pero Macri {cont}")
-        time.sleep(0.8)
-        label1.configure(image=imagen)
-    # Reprogramar esta función para dentro de 1 segundo.
-    root.after(100, actualizar_etiqueta, q)
+    root.after(10, actualizar_etiqueta, q)
 
 
 root = tk.Tk()
@@ -62,15 +67,15 @@ p1 = PhotoImage(file='logo32.png')
 root.iconphoto(True, p1)
 root.resizable(0, 0)
 # root.configure(bg="#3B3E3F")
-label = tk.Label(root, text=f"Ah... pero Macri {cont}",  font=("Roboto", 14))
+label = tk.Label(
+    root, text=f"Ah... pero Macri {counter}",  font=("Roboto", 14))
 label.pack(pady=6, padx=1)
 imagen = tk.PhotoImage(file="cat1.png")
 imagen2 = tk.PhotoImage(file="cat2.png")
 label1 = tk.Label(root, image=imagen)
 label1.pack(pady=2, padx=1, ipadx=4, ipady=4)
-btnMiboton2 = tk.Button(root, text="salir", command=sys.exit,
+btnMiboton2 = tk.Button(root, text="salir", command=close,
                         activebackground="red", activeforeground="#D3D7CF")
 btnMiboton2.pack(pady=7, padx=4, ipadx=4, ipady=4)
-root.after(1, actualizar_imagen, q1)
 root.after(1, actualizar_etiqueta, q)
 root.mainloop()

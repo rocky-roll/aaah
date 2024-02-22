@@ -10,24 +10,31 @@ import queue
 import random
 
 import speech_recognition as sr
-from playsound import playsound
-
+# from playsound import playsound
+import pygame
 listener = sr.Recognizer()
 
 filename = ('cat1.mp3', 'cat5.mp3')
 
 cont = 0
-cont1 = 0
+
 q = queue.Queue()
-q1 = queue.Queue()
+
+pygame.init()
 
 
-def _sonido():
-    global cont1
-    cont1 += 1
-    q1.put_nowait(cont)
+def random_():
+    # numeros=0
     numeros = random.randint(0, 1)
-    playsound(filename[numeros])
+    cat_sounds = filename[numeros]
+    # print(str(cat_sounds),' ',numeros)
+    return cat_sounds
+
+
+def cat_sound():
+    cat_sounds = random_()
+    sound_ = pygame.mixer.Sound(cat_sounds)
+    sound_.play()
 
 
 def listen():
@@ -45,21 +52,21 @@ def recognize_audio(audio):
     print("Procesando...")
     rec = listener.recognize_google(audio, language='es-AR')
     rec = rec.lower()
+    print(rec)
     return rec
 
 
 def main():
-    global cont
     global q
-
+    open_ = False
     while True:
         try:
             response = recognize_audio(listen())
 
-            if "macri" in response or "Macri" in response:
-                _sonido()
-                cont += 1
-                q.put_nowait(cont)
+            if "macri" in response or "hola" in response:
+                cat_sound()
+                open_ = True
+                q.put_nowait(open_)
         except:
             pass
 
