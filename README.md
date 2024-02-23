@@ -34,20 +34,22 @@ Así mismo, la primera vez que se ejecuta el programa, puede que tarde un tiempo
 Este script fue realizado en el lenguaje de programación python3
 
 ## dependencias:
-    • sys
-    • threading
-    • time
-    • tkinter 
-    • queue
-    • random
-    • speech_recognition  
-    • playsound
+    • certifi
+    • charset-normalizer
+    • idna
+    • PyAudio
+    • pygame
+    • requests
+    • SpeechRecognition
+    • typing_extensions
+    • urllib3
      
 para agregar las dependencias utilise:
 
     pip install -r requirements.txt
 
-* playsound==1.2.2 para windows
+## versión de python empleada:
+* Python 3.10.12
 
 ## garantía:
 
